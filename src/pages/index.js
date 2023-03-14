@@ -12,15 +12,15 @@ import { FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter } from "react-icons/bs"
 import { BsInstagram } from "react-icons/bs"
-import headerImg from "../img/working-in-professional-music-studio-2022-07-26-03-24-28-utc 1.png"
+import headerImg from "../img/header.png"
 import list1 from "../img/hyper.png"
-import right from "../img/Group 8787.png"
-import card1 from "../img/Frame 112934.png"
+import right from "../img/app.png"
+import card1 from "../img/bb.png"
 import card2 from "../img/Geo.png"
 import card3 from "../img/albert.png"
 import card4 from "../img/ram_2.png"
-import card5 from "../img/mark 1.png"
-import logo from "../img/Component 1 (1).png"
+import card5 from "../img/mark.png"
+import logo from "../img/logo12.png"
 import bd from "../img/light.svg"
 import list2 from "../img/signum-capital-logo_transparent.png"
 import list3 from "../img/ybb.png"
@@ -63,12 +63,10 @@ export default function Home() {
                 <li className="nav-item">
                   <a className="nav-link" href="#">FAQ</a>
                 </li>
-                <li className="nav-item" >
-                  <a className="nav-link" href="#">
-                    <button>Sign Up</button>
-                  </a>
-                </li>
               </ul>
+              <a className="nav-link" href="#">
+                <button>Sign Up</button>
+              </a>
             </div>
           </div>
 
