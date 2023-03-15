@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react';
-import s from '../styles/Home.module.css'
+import s from '../styles/Home.module.scss'
 import { BsFillPlayFill } from "react-icons/bs"
 import { CgMusicNote } from "react-icons/cg"
 import { FiPlay } from "react-icons/fi"
@@ -12,8 +12,8 @@ import { FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter } from "react-icons/bs"
 import { BsInstagram } from "react-icons/bs"
+import { HiOutlineMenuAlt4 } from "react-icons/hi"
 import headerImg from "../img/header.png"
-import list1 from "../img/hyper.png"
 import right from "../img/app.png"
 import card1 from "../img/bb.png"
 import card2 from "../img/Geo.png"
@@ -22,70 +22,46 @@ import card4 from "../img/ram_2.png"
 import card5 from "../img/mark.png"
 import logo from "../img/logo12.png"
 import bd from "../img/light.svg"
-import list2 from "../img/signum-capital-logo_transparent.png"
-import list3 from "../img/ybb.png"
-import list4 from "../img/hashkey.png"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import img from '../img/Component1.png'
+import list1 from "../img/hyper.svg"
+import list2 from "../img/signum-capital-logo_transparent.svg"
+import list3 from "../img/ybb.svg"
+import list4 from "../img/hashkey.svg"
+import logoNav from "../img/logoNav.svg"
 
 
 export default function Home() {
   const [modal, setModal] = useState(false)
   const [accordion, setAccordion] = useState(3)
-  function openModal() {
-    if (modal) {
-      setModal(false)
-    } else {
-      setModal(true)
-    }
+
+  function modalChange() {
+    setModal(true)
+    document.querySelector(".modal").classList.toggle("db")
+
   }
-
-
-
   return (
     <>
       <div className='body'>
 
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#"><Image src={img} alt="q" /></a>
-            <button onClick={() => { openModal() }} className="navbar-toggler" type="button">
-              =
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav m-auto">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Team</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">FAQ</a>
-                </li>
-              </ul>
-              <a className="nav-link" href="#">
-                <button>Sign Up</button>
-              </a>
-            </div>
+        <div className={s.navbar}>
+          <Image src={logoNav} className={s.logonav} />
+
+          <div className={s.nav_middle}>
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">FAQ</a>
+            <button>Sign Up</button>
           </div>
 
-          <div className="windows1">{modal ? (
-            <div className="toglr">
-              <ul>
-                <li>About</li>
-                <li>Team</li>
-                <li>FAQ</li>
-                <li className="nav-item" >
-                  <a className="nav-link" href="#">
-                    <button>Sign Up</button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          ) : (<div></div>)}</div>
+          <HiOutlineMenuAlt4 className={s.burger} onClick={() => modalChange()} />
 
-        </nav>
+          <div className="modal">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">FAQ</a>
+            <button>Sign Up</button>
+          </div>
+
+        </div>
 
         <header className={s.header}>
 
@@ -118,7 +94,7 @@ export default function Home() {
 
         </section>
 
-        <section className={s.cards}>
+         <section className={s.cards}>
 
           <div className={s.card}>
             <CgMusicNote className={s.card_icon} />
@@ -316,7 +292,7 @@ export default function Home() {
 
             <button className={s.footer_btn}>See listing</button>
           </div>
-        </footer>
+        </footer> 
 
       </div></>
   )
