@@ -126,17 +126,17 @@ export default function Home() {
                 <h4>For listeners</h4>
                 {accordion == 0 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
               </div>
-              {accordion == 0 ? (<p>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+              {accordion == 0 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
               <div className={s.accrodion_list} onClick={() => { setAccordion(1) }}>
                 <h4>For artists</h4>
                 {accordion == 1 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
               </div>
-              {accordion == 1 ? (<p>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+              {accordion == 1 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
               <div onClick={() => { setAccordion(2) }} className={s.accrodion_list}>
                 <h4>For lables</h4>
                 {accordion == 2 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
               </div>
-              {accordion == 2 ? (<p>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+              {accordion == 2 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
             </div>
 
           </div>

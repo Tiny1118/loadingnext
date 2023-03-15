@@ -29,6 +29,7 @@
       height: 48px;
       border-radius: 100px;
       border: 1px solid #1E1E1E;
+      color: #1e1e1e;
       cursor: pointer;
       margin-left: 30px;
     }
@@ -447,6 +448,7 @@
   padding-top: 5%;
   border-radius: 24px;
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .team_title {
@@ -644,15 +646,14 @@
 
   .approach_left {
     width: 80%;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
   }
 
   .approach_right {
     width: 90%;
     margin: 0 auto;
-  }
-
-  .approach_left {
-    padding: 0 20px;
   }
 
   .accrodion_list h4 {
@@ -733,6 +734,9 @@
     padding: 30px 0;
     border-radius: 16px;
   }
+  .acInfo {
+    font-size: 14px;
+  }
 
   .right_body {
     left: 20px;
@@ -756,6 +760,9 @@
 }
 
 @media (max-width: 500px) {
+  .deals_left {
+    padding-top: 30px;
+  }
   .footer {
     width: 94%;
     margin: 0 auto;
