@@ -47,7 +47,7 @@ export default function Home() {
 
           <div className={s.nav_middle}>
             <a href="#">About</a>
-            <a href="#">Team</a>
+            <a href="#team">Team</a>
             <a href="#">FAQ</a>
             <button>Sign Up</button>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="modal">
             <a href="#">About</a>
-            <a href="#">Team</a>
+            <a href="#team">Team</a>
             <a href="#">FAQ</a>
             <button>Sign Up</button>
           </div>
@@ -66,6 +66,12 @@ export default function Home() {
         <header className={s.header}>
 
           <div className={s.header_left}>
+            <svg className={s.star1} width="56" height="56" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0133 0.990348C22.1972 -0.126285 23.8028 -0.126285 23.9867 0.990348L26.8432 18.3326C26.9129 18.7556 27.2444 19.0871 27.6674 19.1568L45.0097 22.0133C46.1263 22.1972 46.1263 23.8028 45.0097 23.9867L27.6674 26.8432C27.2444 26.9129 26.9129 27.2444 26.8432 27.6674L23.9867 45.0097C23.8028 46.1263 22.1972 46.1263 22.0133 45.0097L19.1568 27.6674C19.0871 27.2444 18.7556 26.9129 18.3326 26.8432L0.990348 23.9867C-0.126285 23.8028 -0.126285 22.1972 0.990348 22.0133L18.3326 19.1568C18.7556 19.0871 19.0871 18.7556 19.1568 18.3326L22.0133 0.990348Z" fill="#1E1E1E" />
+            </svg>
+            <svg className={s.star2} width="44" height="44" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0133 0.990348C22.1972 -0.126285 23.8028 -0.126285 23.9867 0.990348L26.8432 18.3326C26.9129 18.7556 27.2444 19.0871 27.6674 19.1568L45.0097 22.0133C46.1263 22.1972 46.1263 23.8028 45.0097 23.9867L27.6674 26.8432C27.2444 26.9129 26.9129 27.2444 26.8432 27.6674L23.9867 45.0097C23.8028 46.1263 22.1972 46.1263 22.0133 45.0097L19.1568 27.6674C19.0871 27.2444 18.7556 26.9129 18.3326 26.8432L0.990348 23.9867C-0.126285 23.8028 -0.126285 22.1972 0.990348 22.0133L18.3326 19.1568C18.7556 19.0871 19.0871 18.7556 19.1568 18.3326L22.0133 0.990348Z" fill="#1E1E1E" />
+            </svg>
             <h1 className={s.title}>Buy copyrights for future world hits and earn money with the artists!</h1>
             <p className={s.header_info}>By buying the rights, you help musicians to promote their tracks and become world stars.</p>
             <button className={s.header_btn}><BsFillPlayFill className={s.headerIcon} /> View offers</button>
@@ -212,7 +218,7 @@ export default function Home() {
 
         </section>
 
-        <section className={s.team}>
+        <section id='team' className={s.team}>
           <h2 className={s.team_title}>Team</h2>
 
           <div className={s.team_cards}>
