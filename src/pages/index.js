@@ -60,7 +60,6 @@ export default function Home() {
             <a href="#">FAQ</a>
             <button>Sign Up</button>
           </div>
-
         </div>
 
         <header className={s.header}>
@@ -100,7 +99,7 @@ export default function Home() {
 
         </section>
 
-         <section className={s.cards}>
+        <section className={s.cards}>
 
           <div className={s.card}>
             <CgMusicNote className={s.card_icon} />
@@ -298,7 +297,7 @@ export default function Home() {
 
             <button className={s.footer_btn}>See listing</button>
           </div>
-        </footer> 
+        </footer>
 
       </div></>
   )
