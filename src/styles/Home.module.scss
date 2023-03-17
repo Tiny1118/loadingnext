@@ -1,6 +1,6 @@
 
 .navbar {
-  width: 97%;
+  width:100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
       border: 1px solid #1E1E1E;
       color: #1e1e1e;
       cursor: pointer;
-      margin-left: 30px;
+      margin-right: 30px;
     }
 
     button:hover {
@@ -78,6 +78,7 @@
 
 .header_left {
   width: 42%;
+  margin-top: 30px;
   padding-left: 40px;
   position: relative;
   .star1{
@@ -121,6 +122,7 @@
   font-size: 16px;
   color: #1E1E1E;
   opacity: 0.56;
+  max-width: 500px;
 }
 
 .header_btn {
@@ -171,15 +173,24 @@
 }
 
 .card {
-  width: 30%;
+  width: 33%;
   background-color: #fff;
   border-radius: 24px;
   height: 270px;
   display: flex;
+  min-width: 300px;
   justify-content: center;
   flex-direction: column;
-  padding-left: 40px;
+  // padding-left: 40px;
+
   transition: .2s;
+  svg{
+    margin-left: 10%;
+  }
+  h4{
+    margin-left: 10%;
+  }
+
 }
 
 .card:hover {
@@ -203,16 +214,20 @@
   color: #00D488;
 }
 
-.approach {
-  width: 96%;
-  margin: 0 auto;
-  background-color: #fff;
+.dff {
   display: flex;
   padding-left: 2%;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
   flex-wrap: wrap;
+  min-height: 500px;
+}
+.approach{
   border-radius: 24px;
+  width: 96%;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 .card {
@@ -223,14 +238,17 @@
   font-weight: 600;
   font-size: 32px;
   color: #1E1E1E;
-  width: 80%;
+// max-width: 350px;
+padding-top: 5%;
+ margin-left: 7.5%;
 }
 
 .approach_left {
   max-width: 500px;
+  width: 40%;
   padding-top: 20px;
-  padding-left: 2%;
-  margin-bottom: 10vw;
+  // padding-left: 2%;
+  // margin-bottom: 10vw;
 }
 
 .accrodion_list {
@@ -263,7 +281,7 @@
 .approach_right {
   width: 45%;
   height: auto;
-  margin-bottom: 4vw;
+  // margin-bottom: 4vw;
 }
 
 .app_img {
@@ -391,7 +409,7 @@
 .left_body {
   position: absolute;
   bottom: 10%;
-  left: 2%;
+  left: 7%;
 }
 
 .left_icon {
@@ -450,7 +468,7 @@
 .right_body {
   position: absolute;
   bottom: 10%;
-  left: 2%;
+  left: 7%;
 }
 
 .download_btn {

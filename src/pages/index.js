@@ -121,34 +121,36 @@ export default function Home() {
         </section>
 
         <section className={s.approach}>
+<h2 className={s.approach_title}>New approach <br /> and new opportunities</h2>
+        <div className={s.dff}>
+            <div className={s.approach_left}>
+              
 
-          <div className={s.approach_left}>
-            <h2 className={s.approach_title}>New approach and new opportunities</h2>
+              <div className={s.accordion}>
 
-            <div className={s.accordion}>
+                <div onClick={() => { setAccordion(0) }} className={s.accrodion_list}>
+                  <h4>For listeners</h4>
+                  {accordion == 0 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
+                </div>
+                {accordion == 0 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+                <div className={s.accrodion_list} onClick={() => { setAccordion(1) }}>
+                  <h4>For artists</h4>
+                  {accordion == 1 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
+                </div>
+                {accordion == 1 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+                <div onClick={() => { setAccordion(2) }} className={s.accrodion_list}>
+                  <h4>For lables</h4>
+                  {accordion == 2 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
+                </div>
+                {accordion == 2 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
+              </div>
 
-              <div onClick={() => { setAccordion(0) }} className={s.accrodion_list}>
-                <h4>For listeners</h4>
-                {accordion == 0 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
-              </div>
-              {accordion == 0 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
-              <div className={s.accrodion_list} onClick={() => { setAccordion(1) }}>
-                <h4>For artists</h4>
-                {accordion == 1 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
-              </div>
-              {accordion == 1 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
-              <div onClick={() => { setAccordion(2) }} className={s.accrodion_list}>
-                <h4>For lables</h4>
-                {accordion == 2 ? (<AiOutlineMinus className={s.accordion_icon} />) : (<AiOutlinePlus className={s.accordion_icon} />)}
-              </div>
-              {accordion == 2 ? (<p className={s.acInfo}>Get financial support and influencer marketing to quickly grow your music's popularity. Get financial support and influencer marketing to quickly grow your music's popularity</p>) : (<p></p>)}
             </div>
 
-          </div>
-
-          <div className={s.approach_right}>
-            <Image src={right} className={s.app_img} />
-          </div>
+            <div className={s.approach_right}>
+              <Image src={right} className={s.app_img} />
+            </div>
+        </div>
 
         </section>
 
